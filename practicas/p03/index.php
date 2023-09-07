@@ -82,6 +82,37 @@ unset($b);
 unset($c);
 
 ?>
+<h2>Ejercicio 3</h2>
+    <p>Muestra el contenido de cada variable inmediatamente después de cada asignación,
+verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+arreglo):</p>
+
+<?php 
+$a = 'PHP5';
+echo $a;
+echo '<br>  </br>';  
+$z[] = &$a;
+var_dump ($z);
+echo '<br>  </br>';  
+$b = '5a version de PHP';
+echo $b;
+echo '<br>  </br>';  
+$c = $b*10;
+echo $c;
+echo '<br>  </br>';  
+$a .= $b;
+echo $a;
+echo '<br>  </br>';  
+$b *= $c;
+echo $b;
+echo '<br> </br>';
+$z[0] = 'MySQL';
+var_dump ($z);
+echo '<br></br>';
+echo '<p>En la primera impresion del arreglo "z" solo esta guardada la variable a por eso solo se imprime esta, en la variable b al ser multiplicada en la variable c por un int (10), esta se convierte en int </p>';
+echo '<p> y al ser el 5 el unico carcater numerico toma ese valor y el resultado termina siendo 50, lo mismo pasa denuevo en la siguiente declarasion pero usa la syntaxis *= que asigna el valor de la variable declara por la variable  despues del = que termina dando un varo de 250 pues que 5 * 50 es 250</p>';
+echo '<p>En la ultima declaracion se eliminan todas las variables del arreglo y se termina asignano solamente la variable de tipo string MYSQL que finalmente es lo unico que se imprime puesto que es la unica variable contenida en el array z</p>'
+?>
 
 
 
