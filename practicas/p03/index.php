@@ -154,8 +154,39 @@ echo '<br>  </br>';
 $c = (double) $a;
 echo '<br>  </br>';  
 echo $c;
-
 echo '<P>Simplemente son conversiones de tipo a las variables </P>'
+?>
+<h2>Ejercicio 6</h2>
+<p>Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas
+usando la función var_dump(<datos>).</p>
+<?php 
+$a = '0';
+$b = 'TRUE';
+$c = FALSE;
+$d = ($a OR $b);
+$e = ($a AND $c);
+$f = ($a XOR $b);
+var_dump($a) ;
+echo '<br>  </br>';
+var_dump($b) ;
+echo '<br>  </br>';
+var_dump($c) ;
+echo '<br>  </br>';
+var_dump($d) ;
+echo '<br>  </br>';
+var_dump($e) ;
+echo '<br>  </br>';
+var_dump($f) ;
+
+echo '<p>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e
+en uno que se pueda mostrar con un echo:</p>';
+
+$text = var_export($e,true);
+echo $text;
+echo '<br>  </br>';
+
+$text = var_export($c,true);
+echo $text;
 ?>
 </body>
 </html>
