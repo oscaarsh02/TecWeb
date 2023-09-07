@@ -114,8 +114,24 @@ echo '<p> y al ser el 5 el unico carcater numerico toma ese valor y el resultado
 echo '<p>En la ultima declaracion se eliminan todas las variables del arreglo y se termina asignano solamente la variable de tipo string MYSQL que finalmente es lo unico que se imprime puesto que es la unica variable contenida en el array z</p>'
 ?>
 
+<h2>Ejercicio 4</h2>
+<p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
+la matriz $GLOBALS o del modificador global de PHP.</p>
 
+<?php
+function global_test()
+{
+global $a, $b, $c, $z;
 
-</ul>
+}
+global_test();
+echo $a;
+echo '<br>  </br>';  
+echo $b;
+echo '<br>  </br>';  
+echo $c;
+echo '<br>  </br>';  
+var_dump($z);
+?> 
 </body>
 </html>
