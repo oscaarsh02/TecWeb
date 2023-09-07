@@ -132,6 +132,30 @@ echo '<br>  </br>';
 echo $c;
 echo '<br>  </br>';  
 var_dump($z);
+
+unset($a);
+unset($b);
+unset($c);
+unset($z);
 ?> 
+<h2>Ejercicio 5</h2>
+<p>Dar el valor de las variables $a, $b, $c al final del siguiente script:</p>
+<?php 
+$a = '7 personas';
+echo $a;
+echo '<br>  </br>';  
+$b = (integer) $a;
+
+echo $b;
+echo '<br>  </br>';
+$a = '9E3';
+echo $a;
+echo '<br>  </br>';  
+$c = (double) $a;
+echo '<br>  </br>';  
+echo $c;
+
+echo '<P>Simplemente son conversiones de tipo a las variables </P>'
+?>
 </body>
 </html>
