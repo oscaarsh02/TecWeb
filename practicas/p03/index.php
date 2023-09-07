@@ -181,12 +181,39 @@ var_dump($f) ;
 echo '<p>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e
 en uno que se pueda mostrar con un echo:</p>';
 
-$text = var_export($e,true);
+$text = var_export($e);
 echo $text;
 echo '<br>  </br>';
 
-$text = var_export($c,true);
+$text = var_export($c);
 echo $text;
+unset($a);
+unset($b);
+unset($c);
+unset($d);
+unset($e);
+unset($f);
+
+?>
+<h2>Ejercicio 7</h2>
+<p>Usando la variable predefinida $_SERVER, determina lo siguiente:</p>
+<p>La versión de Apache y PHP,</p>
+<p>El nombre del sistema operativo (servidor),</p>
+<p>El idioma del navegador (cliente).</p>
+
+
+
+<?php 
+echo '<p> Version de apache y php:</p>';
+echo '<br>  </br>';
+echo $_SERVER['SERVER_SOFTWARE'];
+echo '<p> Nombre del sistema operativo:</p>';
+echo '<br>  </br>';
+echo $_SERVER['HTTP_USER_AGENT'];
+
+echo '<p> El idioma del navegador:</p>';
+echo '<br>  </br>';
+echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 ?>
 </body>
 </html>
