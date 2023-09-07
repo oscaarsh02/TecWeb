@@ -25,7 +25,65 @@
         echo '<li>$var7 es válida porque inicia con una letra.</li>';
         echo '<li>$_element1 es válida porque inicia con guión bajo.</li>';
         echo '</ul>';
-    ?>
+unset($_7var);
+unset($_myvar);
+unset($var7);
+unset($myvar);
+unset($_element1);       
+ ?>
+    <h2>Ejercicio 2</h2>
+    <p>Proporcionar los valores de $a, $b, $c como sigue:</p>
+    
+    <ul>
+    <p>$a = “ManejadorSQL”;</p>
+    <p>$b = 'MySQL’;</p>
+    <p>$c = &amp;$a;</p>
+
+</ul>
+
+<?php 
+$a = 'ManejadorSQL';
+$b = 'MySQ';
+$c = &$a;
+
+echo "Ahora muestra el contenido de cada variable";
+echo '<br> </br>';  
+echo  $a;
+echo '<br> </br>';  
+echo $b;
+echo '<br> </br>';  
+echo $c;
+echo '<br> </br>';  
+
+echo "Ahora muestra el contenido de cada variable";
+
+
+$a = 'PHP server';
+$b = &$a;
+
+ECHO "Vuelve a mostrar el contenido de cada uno";
+echo '<br> </br>';  
+echo $a;
+echo '<br> </br>';  
+echo $b;
+
+echo '<br>  </br>';  
+echo "Describe en y muestra en la página obtenida qué ocurrió en el segundo bloque de
+asignaciones";
+echo '<br>  </br>';  
+
+echo '<p>En el segundo bloque lo que sucede es que en la variable "a" se sobre escribe "Manejador SQL" por el string "PHP server" y en la variable "b" es apuntada a la variable "a" 
+por lo tanto imprimen lo mismo</p>';
+
+
+
+unset($a);
+unset($b);
+unset($c);
+
+?>
+
+
 
 </ul>
 </body>
