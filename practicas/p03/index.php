@@ -25,6 +25,7 @@
         echo '<li>$var7 es válida porque inicia con una letra.</li>';
         echo '<li>$_element1 es válida porque inicia con guión bajo.</li>';
         echo '</ul>';
+<<<<<<< HEAD
 unset($_7var);
 unset($_myvar);
 unset($var7);
@@ -215,5 +216,10 @@ echo '<p> El idioma del navegador:</p>';
 echo '<br>  </br>';
 echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 ?>
+=======
+    ?>
+
+</ul>
+>>>>>>> 36722a2f57801c6dd2821d5afaec1a54e480df0d
 </body>
 </html>
